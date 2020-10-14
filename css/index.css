@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    text-decoration: underline;
+    text-decoration-color: white;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-family:;
+    text-decoration: underline;
+    text-decoration-color: white;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(rgba(28, 43, 115, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/andromede.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    border: 2px dotted;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    margin: 0 350px;
+    height: 50px;
+    position: fixed;
+    background-image: url("../img/andromede.jpg");
+    border-radius: 0 0 15% 15%;
+    opacity: 0.6;
+}
+
+.leftbar {
+    position: absolute;
+    height: 450px;;
+    width: 450px;
+    margin-top: 200px;
+    list-style: none;
+}
+
+.leftbar h2 {
+    font-size: 30px;
+    margin: 5px;
+    font-family:'Amatic SC', cursive;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.leftbar ul {
+    list-style: none;
+}
+
+.home img {
+    margin: 10px 5px 5px 5px;
+}
+
+.topbar p {
+    margin: 20px 5px 10px 5px;
+}
+
+.topbar a {
+    margin: 5px 5px 10px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    margin: 5px 5px;
+}
+
+.nom {
+    margin: 40px 0 40px 0;
+}
+
+.para {
+    font-family: 'Dancing Script', cursive;
+    font-size: 44px;
+}
+
+.hobbies {
+    margin-left: 550px;
+    margin-top: 100px;
+}
+
+.photo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.page1 {
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(28, 43, 115, 0.6)),
+    url("../img/ciel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+}
+
+.page1 p {
+    font-size: 20px;
+}
+.page1 div ul {
+    list-style: none;
+}
+
+#container {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight:bold;
+    padding-top:50px;  
+    width:100%;
+    bottom:45%;
+    display:block;
+}
+
+#flip {
+    height:50px;
+    overflow:hidden;
+}
+
+#flip > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:50px;
+    margin-bottom:50px;
+    display:inline-block;
+}
+  
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+  
+#flip div div {
+    background:#00BEC3;
+}
+
+#flip div:first-child div {
+    background: #03C300;
+}
+
+#flip div:last-child div {
+    background:#C30000;
+}
+
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+}
+
+.point {
+    font-size: 50px;
+    margin: 0;
+}
+
+.page2 {
+    height: 650px;
+    text-align: center;
+    background-image: linear-gradient(rgba(28, 43, 115, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/ciel.jpg");
+}
+
+.page2 p {
+    font-size: 20px;
+}
+iframe {
+    border-radius: 20%;
+    margin-top: 10px;
+}
+
+.page3 {
+    height: 650px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(28, 43, 115, 0.6)),
+    url("../img/ciel.jpg");
+    display: flex;
+}
+
+.page3 ul {
+    list-style: none;
+}
+
+.column1 {
+    height: 300px;
+    width: 33%;
+    order: 2;
+    position: absolute; 
+    right: 500px;
+    left: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+.column1 li {
+    margin-top: 50px;
+}
+
+.column2 {
+    height: 300px;
+    width: 33%;
+    order: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+.column2 li:first-of-type {
+    margin-top: 30px;
+}
+.column3 {
+    height: 300px;
+    width: 33%;
+    order: 3;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;   
+}
+
+.column3 li:first-of-type {
+    margin-top: 30px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #181818, #292929, #3b3b3b, #676767, #979797, #cacaca, #ffffff);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 20px;
+}
+
+footer p {
+    height: 100px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+    margin: 0;
+}
+
+footer a img {
+    border: solid;
+    border-radius: 50%;
+    margin: 0;
+    border-color: black;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+footer li {
+    list-style: none;
+}
+
+.side {
+    width: 50%;
+}
+
+.skills {
+    width: 500px;
+    margin: 60px;
+    color: white;
+    list-style: none;
+}
+
+.skills li {
+    margin: 20px 0;
+}
+
+.bar {
+    background: white;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+    height: 5px;
+    float: left;
+    background: #2187e7;
+
+}
+
+.html {
+    width: 70%;
+    animation: html 10s;
+}
+
+.css {
+    width: 40%;
+    animation: css 10s;
+}
+
+.jquery {
+    width: 5%;
+    animation: jquery 10s;
+}
+
+.js {
+    width: 5%;
+    animation: js 10s;
+}
+
+.git {
+    width: 25%;
+    animation: git 10s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes jquery {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 5%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 5%;
+    }
+}
+
+@keyframes git {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+
+.ci {
+    width: 500px;
+    margin: 60px;
+    color: white;
+    list-style: none;
+}
+
+.ci li {
+    margin: 20px 0;
+}
+
+.bar {
+    background: white;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+    height: 5px;
+    float: left;
+    background: #2187e7;
+
+}
+
+.info {
+    width: 70%;
+    animation: info 10s;
+}
+
+.astro {
+    width: 50%;
+    animation: astro 10s;
+}
+
+.socia {
+    width: 90%;
+    animation: socia 10s;
+}
+
+.sport {
+    width: 100%;
+    animation: sport 10s;
+}
+
+.am {
+    width: 40%;
+    animation: am 10s;
+}
+
+.psycho {
+    width: 30%;
+    animation: psycho 10s;
+}
+
+@keyframes info {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes astro {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes socia {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes sport {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes am {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 5%;
+    }
+}
+
+@keyframes psycho {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 5%;
+    }
+}
